@@ -14,7 +14,7 @@ type Props = {
     setSelectedPage: (value:SelectedPage) => void;
 }
 
-const Home = ({setSelectedPage}: Props) => {
+const Home:React.FC<Props> = ({ setSelectedPage }) => {
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
     <section 
